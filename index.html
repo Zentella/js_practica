@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <!-- 1º desafío --> 
+
+    <div id="contenedor">            
+        <h1>Escríbenos!!!</h1>
+        <form action="#" name="form" id="form">
+            <p class="resultado" style="color:green"></p>
+            <div>            
+                <p>Nombre completo</p>
+                <input type="text" class="textNombre">
+                <p class="errorNombre" style="color:red"></p>
+            </div>
+            <div>
+                <p>Asunto</p>
+                <input type="text" class="textAsunto">
+                <p class="errorAsunto" style="color:red"></p>
+            </div>
+            <div>
+                <p>Mensaje</p>
+                <input type="text" class="textMensaje">
+                <p class="errorMensaje" style="color:red"></p>
+            </div>
+            <button type="submit">Enviar mensaje</button>            
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 2º desafío --> 
+
+    
+        <div class="columnas" style="display: grid;grid-template-columns: 50px 300px;grid-template-rows: 50px 50px 50px 50px 50px 50px;">
+
+            <div id="box1" style="width: 50px;grid-column: 1 / 2;height:50px;background-color:red;border:1px solid black"></div>
+            <div id="box" style="width: 300px;height:300px;background-color:red;border:1px solid black"></div>
+            <div id="box2" style="width: 50px;grid-column: 1 / 2;height:50px;background-color:orange;border:1px solid black"></div>
+            <div id="box3" style="width: 50px;grid-column: 1 / 2;height:50px;background-color:yellow;border:1px solid black"></div>
+            <div id="box4" style="width: 50px;grid-column: 1 / 2;background-color:green;border:1px solid black"></div>
+            <div id="box5" style="width: 50px;grid-column: 1 / 2;height:50px;background-color:rgb(52, 201, 221);border:1px solid black"></div>
+            <div id="box6" style="width: 50px;grid-column: 1 / 2;height:50px;background-color:rgb(187, 40, 118);border:1px solid black"></div>
+            
+
+
+        </div>    
+
+    <hr>
+
+    <!-- 3º desafío --> 
+
+    <div id="container">
+        <form action="#" name="calcu" id="calcu">
+
+            <p class="resultadoCalc" style="color:green"></p>
+            <div>            
+                <p>Ingrese primer número</p>
+                <input type="text" class="Num1">
+                <p class="errorNum1" style="color:red"></p>
+
+            </div>
+            <div>
+                <p>Ingrese segundo número</p>
+                <input type="text" class="Num2">
+                <p class="errorNum2" style="color:red"></p>
+
+            </div>
+            <div>
+                <p>Ingrese Suma o Resta</p>
+                <input type="text" class="Operacion">
+                <p class="errorOperacion" style="color:red"></p>
+
+            </div>
+            <button type="submit">Calcular</button>            
+        </form>
+    </div>  
+
+
+    <script src="formulario.js"></script>
+    <script src="color.js"></script>
+    <script src="calcular.js"></script> 
+    
+</body>
+</html>
