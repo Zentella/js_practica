@@ -59,11 +59,17 @@
     <div id="container">
         <form action="#" name="calcu" id="calcu">
 
-            <p class="resultadoCalc" style="color:green"></p>
+            <p class="resultadoCalc" style="display:inline-block;padding:4px 8px;background:black;color:white"></p>
             <div>            
                 <p>Ingrese primer número</p>
                 <input type="text" class="Num1">
                 <p class="errorNum1" style="color:red"></p>
+
+            </div>
+            <div>
+                <p>Ingrese (suma) para Sumar o (resta) para Restar</p>
+                <input type="text" class="Operacion">
+                <p class="errorOperacion" style="color:red"></p>
 
             </div>
             <div>
@@ -72,13 +78,8 @@
                 <p class="errorNum2" style="color:red"></p>
 
             </div>
-            <div>
-                <p>Ingrese Suma o Resta</p>
-                <input type="text" class="Operacion">
-                <p class="errorOperacion" style="color:red"></p>
-
-            </div>
-            <button type="submit">Calcular</button>            
+            
+            <button type="submit">Calcular</button><p>(sin resultados negativos)</p>         
         </form>
     </div>  
 

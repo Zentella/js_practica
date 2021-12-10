@@ -1,5 +1,7 @@
 /// 3º desafío
 
+document.getElementById('calcu').addEventListener('click', function(){ limpiaResultado()})//func anonima y despues la func q limpia campos
+
 let calc = document.getElementById("calcu")
 
 calc.addEventListener("submit", function(evento) {
@@ -32,7 +34,7 @@ calc.addEventListener("submit", function(evento) {
             document.querySelector(".resultadoCalc").innerHTML = `El resultado de la ${Operacion} es ${salida}`
 
         } else {
-            document.querySelector(".errorOperacion").innerHTML = "Suma o Resta."
+            document.querySelector(".errorOperacion").innerHTML = "suma o resta."
             pasamosValidacion = false
         }
         
@@ -71,9 +73,14 @@ function valida(Num1, Num2, operacion) {
     let validacionOperacion = /[a-zA-Z]/gim
 
     if (validacionOperacion.test(operacion) == false) {
-        document.querySelector(".errorOperacion").innerHTML = "Suma o Resta."
+        document.querySelector(".errorOperacion").innerHTML = "+ o -."
         pasamosValidacion = false
     }       
 
     return pasamosValidacion
+}
+
+function limpiaResultado() {
+    document.querySelector(".resultado").innerHTML=""
+
 }
